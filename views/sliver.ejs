@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/sliver.css">
+  </head>
+  <body>
+<header>
+  <div id="logo"></div>
+  <div id="name">NEELIMA JEWELLERY</div>
+  <nav id="nav-bar">
+    <div id="home" onclick="home()">Home</div>
+    <div id="account">Account</div>
+    <div id="aboutus">About us</div>
+    <div id="contactus">Contact us</div>
+  </nav>
+  <section id="products">
+    <div id="rectify" style="display: none;">SLIVER-ITEM</div>
+    <img src="https://imgs.search.brave.com/4IIGkWn0hsiodBjRk8E5i6Vn4-wB9z-JyuPHVkKWqzI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvNTYvNTY3NjMu/cG5n"  id="threebtn" onclick="wcopen()">
+    <div id="product">Product Type:</div>
+    <button id="sliver">Sliver Ornaments</button>
+  </section>
+</header>
+<main>
+  <div  class="orn-img"><img src="https://www.lalithaajewellery.com/assets/img/silver/1.webp" alt=""  style="width: 300px;height: 300px;  border-radius: 20px; " id="img1" />
+  <img src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg" class="svg"alt="" onclick="wish1()" id="star1"></div>
+  <div class="orn-img"><img src="https://www.lalithaajewellery.com/assets/img/silver/3.webp" alt="" style="width: 300px;height: 300px;  border-radius: 20px; " id="img2" /> <img src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg" class="svg"alt=""  onclick="wish2()" id="star2"></div>
+  <div class="orn-img"><img src=" https://www.lalithaajewellery.com/assets/img/silver/4.webp" alt="" style="width: 300px;height: 300px;  border-radius: 20px;" id="img3" /> <img src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg" class="svg"alt="" onclick="wish3()" id="star3"></div>
+  <div class="orn-txt">
+    Rs:<span id="cost1" class="orn-cost">16782</span>/-<br>
+    <span class="cal" id="vd1" onclick="baropen1()">View Details</span>
+  </div>
+  <div class="orn-txt">
+    Rs:<span id="cost2"  class="orn-cost">17869</span>/-<br>
+    <span  class="cal" id="vd2"  onclick="baropen2()">View Details</span>
+  </div>
+  <div class="orn-txt">
+    Rs:<span id="cost3"  class="orn-cost">18412</span>/-<br>
+    <span  class="cal" id="vd3" onclick="baropen3()">View Details</span>
+  </div>
+  <div class="orn-img"><img src="https://www.lalithaajewellery.com/assets/img/silver/2.webp" alt=""  style="width: 300px;height: 300px; border-radius: 20px; "  id="img4"/> <img src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg" class="svg"alt="" onclick="wish4()" id="star4"></div>
+  <div class="orn-img"><img src="https://www.lalithaajewellery.com/assets/img/silver/7.webp" alt=""   style="width: 300px;height: 300px;  border-radius: 20px;"  id="img5"/> <img src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg" class="svg"alt="" onclick="wish5()" id="star5"></div>
+  <div class="orn-img"><img src="https://www.lalithaajewellery.com/assets/img/silver/5.webp" alt=""  style="width: 300px;height: 300px; border-radius: 20px; "  id="img6"/> <img src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg" class="svg"alt="" onclick="wish6()" id="star6"></div>
+  <div class="orn-txt">
+    Rs:<span id="cost4" class="orn-cost">18955</span>/- <br>
+    <span  class="cal" id="vd4" onclick="baropen4()">View Details</span>
+  </div>
+  <div class="orn-txt" >
+    Rs:<span id="cost5"  class="orn-cost">22212</span>/- <br>
+    <span  class="cal" id="vd5" onclick="baropen5()">View Details</span>
+  </div>
+  <div class="orn-txt">
+    Rs:<span id="cost6" class="orn-cost">22754</span>/-  <br>
+    <span  class="cal" id="vd6" onclick="baropen6()">View Details </span>
+  </div>
+  <div class="orn-img"><img src="https://www.lalithaajewellery.com/assets/img/silver/8.webp" alt=""  style="width: 300px;height: 300px;   border-radius: 20px;"  id="img7"/> <img src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg" class="svg"alt="" onclick="wish7()" id="star7"></div>
+  <div class="orn-img"><img src="https://www.lalithaajewellery.com/assets/img/silver/9.webp" alt=""  style="width: 300px;height: 300px;  border-radius: 20px; "  id="img8"/> <img src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg"class="svg"alt="" onclick="wish8()" id="star8"></div>
+  <div class="orn-img"><img src="https://www.lalithaajewellery.com/assets/img/silver/12.webp" alt="" style="width: 300px;height: 300px;   border-radius: 20px;"  id="img9"/> <img src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg"class="svg"alt="" onclick="wish9()" id="star9"></div>
+  <div class="orn-txt">
+    Rs:<span id="cost7" class="orn-cost">21126</span>/-  <br>
+    <span  class="cal" id="vd7" onclick="baropen7()">View Details</span>
+  </div>
+  <div class="orn-txt" >
+    Rs:<span id="cost8"  class="orn-cost">20583</span>/-  <br>
+    <span  class="cal" id="vd8" onclick="baropen8()">View Details</span>
+  </div>
+  <div class="orn-txt">
+    Rs:<span id="cost9"  class="orn-cost">29811</span>/-           <br>
+    <span  class="cal" id="vd9" onclick="baropen9()">View Details</span>
+  </div>
+  <div class="details-bar" id="bar1">
+    <div class="wrong" onclick="wrong()"></div>
+    <div style="position:relative;position: absolute;top: 70px; right: 50px;width: 330px;height: 350px;border-radius: 10px;padding-top: 15px;padding-left: 50px;">
+      <h1 style="font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif; text-decoration: underline; position: absolute;left: 80px;">Price Details</h1>
+       <div class="bill" style="position: absolute; top:50px">Weight of item: <span id="gms1">3</span> Grams </div>
+      <div class="bill" style="position: absolute; top:95px;left: 100px;">Item-type: GOLD</div>
+      <div  class="bill" style="position: absolute; top: 140px; left: 93px;">Gold-Rate: ₹5427.3</div>
+      <div class="bill" style="position: absolute; top:180px;left: 37px;">Making-charges: ₹500</div>
+      <div  class="bill" style="padding-top: 10px; text-align:center;border-top:  2px solid black; width: 180px;height: 30px;position: absolute; top:225px;left: 100px; font-size: 22px; " >Total = ₹<span id="fprice1">16782</span></div>
+
+    </div>
+    <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="" class="img-det" id="imgdet1">
+    <button class="cart-add" onclick="addcart1()">Add To Cart</button>
+    <button class="buy-now"  onclick="buyclick1()">Buy Now</button>
+      <!-- <button id="cancelbtn" onclick="wrong()">close</button> -->
+ </div>
+ <div class="details-bar" id="bar2">
+  <div class="wrong" onclick="wrong()"></div>
+  <div style="position:relative;position: absolute;top: 70px; right: 50px;width: 330px;height: 350px;border-radius: 10px;padding-top: 15px;padding-left: 50px;">
+    <h1 style="font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif; text-decoration: underline; position: absolute;left: 80px;">Price Details</h1>
+     <div class="bill" style="position: absolute; top:50px">Weight of item: <span id="gms2">3.2</span> Grams </div>
+    <div class="bill" style="position: absolute; top:95px;left: 100px;">Item-type: GOLD</div>
+    <div  class="bill" style="position: absolute; top: 140px; left: 93px;">Gold-Rate: ₹5427.3</div>
+    <div class="bill" style="position: absolute; top:180px;left: 37px;">Making-charges: ₹500</div>
+    <div  class="bill" style="padding-top: 10px; text-align:center;border-top:  2px solid black; width: 180px;height: 30px;position: absolute; top:225px;left: 100px; font-size: 22px; " >Total = ₹<span id="fprice2">17869</span></div>
+
+  </div>
+  <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="" class="img-det" id="imgdet2">
+  <button class="cart-add" onclick="addcart2()">Add To Cart</button>
+  <button class="buy-now"  onclick="buyclick3()">Buy Now</button>
+    <!-- <button id="cancelbtn" onclick="wrong()">close</button> -->
+</div>
+<div class="details-bar" id="bar3">
+  <div class="wrong" onclick="wrong()"></div>
+  <div style="position:relative;position: absolute;top: 70px; right: 50px;width: 330px;height: 350px;border-radius: 10px;padding-top: 15px;padding-left: 50px;">
+    <h1 style="font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif; text-decoration: underline; position: absolute;left: 80px;">Price Details</h1>
+     <div class="bill" style="position: absolute; top:50px">Weight of item: <span id="gms3">3.3</span> Grams </div>
+    <div class="bill" style="position: absolute; top:95px;left: 100px;">Item-type: GOLD</div>
+    <div  class="bill" style="position: absolute; top: 140px; left: 93px;">Gold-Rate: ₹5427.3</div>
+    <div class="bill" style="position: absolute; top:180px;left: 37px;">Making-charges: ₹500</div>
+    <div  class="bill" style="padding-top: 10px; text-align:center;border-top:  2px solid black; width: 180px;height: 30px;position: absolute; top:225px;left: 100px; font-size: 22px; " >Total = ₹<span id="fprice3">18412</span></div>
+
+  </div>
+  <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="" class="img-det" id="imgdet3">
+  <button class="cart-add" onclick="addcart3()">Add To Cart</button>
+  <button class="buy-now"  onclick="buyclick3()">Buy Now</button>
+    <!-- <button id="cancelbtn" onclick="wrong()">close</button> -->
+</div>
+<div class="details-bar" id="bar4">
+  <div class="wrong" onclick="wrong()"></div>
+  <div style="position:relative;position: absolute;top: 70px; right: 50px;width: 330px;height: 350px;border-radius: 10px;padding-top: 15px;padding-left: 50px;">
+    <h1 style="font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif; text-decoration: underline; position: absolute;left: 80px;">Price Details</h1>
+     <div class="bill" style="position: absolute; top:50px">Weight of item: <span id="gms4">3.4</span> Grams </div>
+    <div class="bill" style="position: absolute; top:95px;left: 100px;">Item-type: GOLD</div>
+    <div  class="bill" style="position: absolute; top: 140px; left: 93px;">Gold-Rate: ₹5427.3</div>
+    <div class="bill" style="position: absolute; top:180px;left: 37px;">Making-charges: ₹500</div>
+    <div  class="bill" style="padding-top: 10px; text-align:center;border-top:  2px solid black; width: 180px;height: 30px;position: absolute; top:225px;left: 100px; font-size: 22px; " >Total = ₹<span id="fprice4">18955</span></div>
+
+  </div>
+  <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="" class="img-det" id="imgdet4">
+  <button class="cart-add" onclick="addcart4()">Add To Cart</button>
+  <button class="buy-now"  onclick="buyclick4()">Buy Now</button>
+    <!-- <button id="cancelbtn" onclick="wrong()">close</button> -->
+</div>
+<div class="details-bar" id="bar5">
+  <div class="wrong" onclick="wrong()"></div>
+  <div style="position:relative;position: absolute;top: 70px; right: 50px;width: 330px;height: 350px;border-radius: 10px;padding-top: 15px;padding-left: 50px;">
+    <h1 style="font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif; text-decoration: underline; position: absolute;left: 80px;">Price Details</h1>
+     <div class="bill" style="position: absolute; top:50px">Weight of item: <span id="gms5">4.0</span> Grams </div>
+    <div class="bill" style="position: absolute; top:95px;left: 100px;">Item-type: GOLD</div>
+    <div  class="bill" style="position: absolute; top: 140px; left: 93px;">Gold-Rate: ₹5427.3</div>
+    <div class="bill" style="position: absolute; top:180px;left: 37px;">Making-charges: ₹500</div>
+    <div  class="bill" style="padding-top: 10px; text-align:center;border-top:  2px solid black; width: 180px;height: 30px;position: absolute; top:225px;left: 100px; font-size: 22px; " >Total = ₹<span id="fprice5">22212</span></div>
+  </div>
+  <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt=""class='img-det' id="imgdet5">
+  <button class="cart-add" onclick="addcart5()">Add To Cart</button>
+  <button class="buy-now" onclick="buyclick5()">Buy Now</button>
+    <!-- <button id="cancelbtn" onclick="wrong()">close</button> -->
+</div>
+<div class="details-bar" id="bar6">
+  <div class="wrong" onclick="wrong()"></div>
+  <div style="position:relative;position: absolute;top: 70px; right: 50px;width: 330px;height: 350px;border-radius: 10px;padding-top: 15px;padding-left: 50px;">
+    <h1 style="font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif; text-decoration: underline; position: absolute;left: 80px;">Price Details</h1>
+     <div class="bill" style="position: absolute; top:50px">Weight of item: <span id="gms6">4.1</span> Grams </div>
+    <div class="bill" style="position: absolute; top:95px;left: 100px;">Item-type: GOLD</div>
+    <div  class="bill" style="position: absolute; top: 140px; left: 93px;">Gold-Rate: ₹5427.3</div>
+    <div class="bill" style="position: absolute; top:180px;left: 37px;">Making-charges: ₹500</div>
+    <div  class="bill" style="padding-top: 10px; text-align:center;border-top:  2px solid black; width: 180px;height: 30px;position: absolute; top:225px;left: 100px; font-size: 22px; " >Total = ₹<span id="fprice6">22754</span></div>
+
+  </div>
+  <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="" class="img-det" id="imgdet6">
+  <button class="cart-add" onclick="addcart6()">Add To Cart</button>
+  <button class="buy-now"  onclick="buyclick6()">Buy Now</button>
+    <!-- <button id="cancelbtn" onclick="wrong()">close</button> -->
+</div>
+<div class="details-bar" id="bar7" >
+  <div class="wrong" onclick="wrong()"></div>
+  <div style="position:relative;position: absolute;top: 70px; right: 50px;width: 330px;height: 350px;border-radius: 10px;padding-top: 15px;padding-left: 50px;">
+    <h1 style="font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif; text-decoration: underline; position: absolute;left: 80px;">Price Details</h1>
+     <div class="bill" style="position: absolute; top:50px">Weight of item: <span id="gms7">3.8</span> Grams </div>
+    <div class="bill" style="position: absolute; top:95px;left: 100px;">Item-type: GOLD</div>
+    <div  class="bill" style="position: absolute; top: 140px; left: 93px;">Gold-Rate: ₹5427.3</div>
+    <div class="bill" style="position: absolute; top:180px;left: 37px;">Making-charges: ₹500</div>
+    <div  class="bill" style="padding-top: 10px; text-align:center;border-top:  2px solid black; width: 180px;height: 30px;position: absolute; top:225px;left: 100px; font-size: 22px; " >Total = ₹<span id="fprice7">21126</span></div>
+
+  </div>
+  <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="" class="img-det" id="imgdet7">
+  <button class="cart-add" onclick="addcart7()">Add To Cart</button>
+  <button class="buy-now" onclick="buyclick7()">Buy Now</button>
+    <!-- <button id="cancelbtn" onclick="wrong()">close</button> -->
+</div>
+<div class="details-bar" id="bar8">
+  <div class="wrong" onclick="wrong()"></div>
+  <div style="position:relative;position: absolute;top: 70px; right: 50px;width: 330px;height: 350px;border-radius: 10px;padding-top: 15px;padding-left: 50px;">
+    <h1 style="font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif; text-decoration: underline; position: absolute;left: 80px;">Price Details</h1>
+     <div class="bill" style="position: absolute; top:50px">Weight of item: <span id="gms8">3.7</span> Grams </div>
+    <div class="bill" style="position: absolute; top:95px;left: 100px;">Item-type: GOLD</div>
+    <div  class="bill" style="position: absolute; top: 140px; left: 93px;">Gold-Rate: ₹5427.3</div>
+    <div class="bill" style="position: absolute; top:180px;left: 37px;">Making-charges: ₹500</div>
+    <div  class="bill" style="padding-top: 10px; text-align:center;border-top:  2px solid black; width: 180px;height: 30px;position: absolute; top:225px;left: 100px; font-size: 22px; " >Total = ₹<span id="fprice8">20583</span></div>
+  </div>
+  <img src="https://www.lalithaajewellery.com/assets/img/ring/6.webp" alt="" class="img-det" id="imgdet8">
+  <button class="cart-add" onclick="addcart8()">Add To Cart</button>
+  <button class="buy-now" onclick="buyclick8()">Buy Now</button>
+    <!-- <button id="cancelbtn" onclick="wrong()">close</button> -->
+</div>
+<div class="details-bar" id="bar9">
+  <div class="wrong" onclick="wrong()"></div>
+  <div style="position:relative;position: absolute;top: 70px; right: 50px;width: 330px;height: 350px;border-radius: 10px;padding-top: 15px;padding-left: 50px;">
+    <h1 style="font-weight: bold;font-size: 30px;font-family: Arial, Helvetica, sans-serif; text-decoration: underline; position: absolute;left: 80px;">Price Details</h1>
+     <div class="bill" style="position: absolute; top:50px">Weight of item: <span id="gms9">5.4</span> Grams </div>
+    <div class="bill" style="position: absolute; top:95px;left: 100px;">Item-type: GOLD</div>
+    <div  class="bill" style="position: absolute; top: 140px; left: 93px;">Gold-Rate: ₹5427.3</div>
+    <div class="bill" style="position: absolute; top:180px;left: 37px;">Making-charges: ₹500</div>
+    <div  class="bill" style="padding-top: 10px; text-align:center;border-top:  2px solid black; width: 180px;height: 30px;position: absolute; top:225px;left: 100px; font-size: 22px; " >Total = ₹<span id="fprice9">29811</span></div>
+
+  </div>
+  <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="" class="img-det" id="imgdet9">
+  <button class="cart-add" onclick="addcart9()">Add To Cart</button>
+  <button class="buy-now" onclick="buyclick9()">Buy Now</button>
+    <!-- <button id="cancelbtn" onclick="wrong()">close</button> -->
+</div>
+ <div id="wcsheet">
+  <img src="https://imgs.search.brave.com/vFYpXTN_KRcHAfx5yrZJaudSQaZNtn8XUYIEdMWu5ao/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L3Nob3BwaW5nLWNh/cnQtcG5nL3Nob3Bw/aW5nLWNhcnQtc3Zn/LXBuZy1pY29uLWRv/d25sb2FkLTI4LnBu/Zw" id="cartlogo" onclick="cartclick()"></img>
+ 
+  <img src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg" id="wishlogo" onclick="wishclick()"></img>
+  <ul id="cart" type="none" >
+
+  </ul> 
+  <!-- <img src="https://imgs.search.brave.com/vFYpXTN_KRcHAfx5yrZJaudSQaZNtn8XUYIEdMWu5ao/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L3Nob3BwaW5nLWNh/cnQtcG5nL3Nob3Bw/aW5nLWNhcnQtc3Zn/LXBuZy1pY29uLWRv/d25sb2FkLTI4LnBu/Zw" id="msgempty"></img>
+  <span id="msg">EMPTY</span> -->
+ <ul   id="wishlist-items" type="none">
+  <!-- <li>
+    <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="">
+    <span>GOLD RING</span>
+    <div >
+      <button>Add</button>
+    <button>Remove</button>
+    </div>
+  </li> -->
+ </ul>
+ </div>
+</main>
+<script>
+  let cart=document.getElementById("cart")
+  let cartlogo=document.getElementById("cartlogo")
+    let wishlogo=document.getElementById("wishlogo")
+  let imgsvg=document.getElementsByClassName("svg")
+    let star1=document.getElementById("star1")
+    let star2=document.getElementById("star2")
+    let star3=document.getElementById("star3")
+    let star4=document.getElementById("star4")
+    let star5=document.getElementById("star5")
+    let star6=document.getElementById("star6")
+    let star7=document.getElementById("star7")
+    let star8=document.getElementById("star8")
+    let star9=document.getElementById("star9")
+    let bar1=document.getElementById("bar1");
+    let bar2=document.getElementById("bar2");
+    let bar3=document.getElementById("bar3");
+    let bar4=document.getElementById("bar4");
+    let bar5=document.getElementById("bar5");
+    let bar6=document.getElementById("bar6");
+    let bar7=document.getElementById("bar7");
+    let bar8=document.getElementById("bar8");
+    let bar9=document.getElementById("bar9");
+    let count1=0
+    let count2=0
+    let count3=0
+    let count4= 0
+    let count5= 0
+    let count6= 0
+    let count7= 0
+    let count8= 0
+    let count9=0;
+    let htmlid=0
+   let htmlid1=0
+   let htmlid2=0
+   let htmlid3=0
+   let htmlid4=0
+   let htmlid5=0
+   let htmlid6=0
+   let htmlid7=0
+   let htmlid8=0
+    let wcsheet=document.getElementById("wcsheet");
+    let wish=[]
+    let wishlist=[]
+    let wishlistitems=document.getElementById("wishlist-items")
+    function cartclick(){
+    cartlogo.style.backgroundColor="white"
+    cart.style.display="inline"
+    wishlistitems.style.display="none"
+    wishlogo.style.backgroundColor="rgb(206, 200, 200)"
+   }
+   function wishclick(){
+    wishlogo.style.backgroundColor="white"
+    cartlogo.style.backgroundColor="rgb(206, 200, 200)"
+    wishlistitems.style.display="inline"
+    cart.style.display="none"
+   }
+   function buyclick1() {
+    let productImageSrc = img1.src;
+    let productName = rectify.innerText;
+    let price = fprice1.innerText;
+    let Weight=gms1.innerText
+    const url = new URL("/buynow", window.location.href);
+    url.searchParams.set("productName", productName);
+    url.searchParams.set("price", price);
+    url.searchParams.set("productImageSrc", productImageSrc);
+    url.searchParams.set("weight",Weight)
+    // Redirect to the "buynow" page with URL parameters
+    window.location.href = url.toString();
+}
+   function buyclick2() {
+    let productImageSrc = img2.src;
+    let productName = rectify.innerText;
+    let price = fprice2.innerText;
+    let Weight=gms2.innerText
+    const url = new URL("/buynow", window.location.href);
+    url.searchParams.set("productName", productName);
+    url.searchParams.set("price", price);
+    url.searchParams.set("productImageSrc", productImageSrc);
+    url.searchParams.set("weight",Weight)
+    // Redirect to the "buynow" page with URL parameters
+    window.location.href = url.toString();
+}
+   function buyclick3() {
+    let productImageSrc = img3.src;
+    let productName = rectify.innerText;
+    let price = fprice3.innerText;
+    let Weight=gms3.innerText
+    const url = new URL("/buynow", window.location.href);
+    url.searchParams.set("productName", productName);
+    url.searchParams.set("price", price);
+    url.searchParams.set("productImageSrc", productImageSrc);
+    url.searchParams.set("weight",Weight)
+    // Redirect to the "buynow" page with URL parameters
+    window.location.href = url.toString();
+}
+   function buyclick4() {
+    let productImageSrc = img4.src;
+    let productName = rectify.innerText;
+    let price = fprice4.innerText;
+    let Weight=gms4.innerText
+    const url = new URL("/buynow", window.location.href);
+    url.searchParams.set("productName", productName);
+    url.searchParams.set("price", price);
+    url.searchParams.set("productImageSrc", productImageSrc);
+    url.searchParams.set("weight",Weight)
+    // Redirect to the "buynow" page with URL parameters
+    window.location.href = url.toString();
+}
+   function buyclick5() {
+    let productImageSrc = img5.src;
+    let productName = rectify.innerText;
+    let price = fprice5.innerText;
+    let Weight=gms5.innerText
+    const url = new URL("/buynow", window.location.href);
+    url.searchParams.set("productName", productName);
+    url.searchParams.set("price", price);
+    url.searchParams.set("productImageSrc", productImageSrc);
+    url.searchParams.set("weight",Weight)
+    // Redirect to the "buynow" page with URL parameters
+    window.location.href = url.toString();
+}
+   function buyclick6() {
+    let productImageSrc = img6.src;
+    let productName = rectify.innerText;
+    let price = fprice6.innerText;
+    let Weight=gms6.innerText
+    const url = new URL("/buynow", window.location.href);
+    url.searchParams.set("productName", productName);
+    url.searchParams.set("price", price);
+    url.searchParams.set("productImageSrc", productImageSrc);
+    url.searchParams.set("weight",Weight)
+    // Redirect to the "buynow" page with URL parameters
+    window.location.href = url.toString();
+}
+   function buyclick7() {
+    let productImageSrc = img7.src;
+    let productName = rectify.innerText;
+    let price = fprice7.innerText;
+    let Weight=gms7.innerText
+    const url = new URL("/buynow", window.location.href);
+    url.searchParams.set("productName", productName);
+    url.searchParams.set("price", price);
+    url.searchParams.set("productImageSrc", productImageSrc);
+    url.searchParams.set("weight",Weight)
+    // Redirect to the "buynow" page with URL parameters
+    window.location.href = url.toString();
+}
+   function buyclick8() {
+    let productImageSrc = img8.src;
+    let productName = rectify.innerText;
+    let price = fprice8.innerText;
+    let Weight=gms8.innerText
+    const url = new URL("/buynow", window.location.href);
+    url.searchParams.set("productName", productName);
+    url.searchParams.set("price", price);
+    url.searchParams.set("productImageSrc", productImageSrc);
+    url.searchParams.set("weight",Weight)
+    // Redirect to the "buynow" page with URL parameters
+    window.location.href = url.toString();
+}
+   function buyclick9() {
+    let productImageSrc = img9.src;
+    let productName = rectify.innerText;
+    let price = fprice9.innerText;
+    let Weight=gms9.innerText
+    const url = new URL("/buynow", window.location.href);
+    url.searchParams.set("productName", productName);
+    url.searchParams.set("price", price);
+    url.searchParams.set("productImageSrc", productImageSrc);
+    url.searchParams.set("weight",Weight)
+    // Redirect to the "buynow" page with URL parameters
+    window.location.href = url.toString();
+}
+   function cartclick(){
+    cartlogo.style.backgroundColor="white"
+    cart.style.display="inline"
+    wishlistitems.style.display="none"
+    wishlogo.style.backgroundColor="rgb(206, 200, 200)"
+   }
+   function wishclick(){
+    wishlogo.style.backgroundColor="white"
+    cartlogo.style.backgroundColor="rgb(206, 200, 200)"
+    wishlistitems.style.display="inline"
+    cart.style.display="none"
+   }
+   function buyclick(){
+    window.location.href="/buynow"
+   }
+   function wish1(){
+          count1++;  
+        let lihtml=document.createElement("li");
+        let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=img1.src
+        addhtml.innerText="Add"
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)
+        wishlist.push(wish1);
+      if(count1%2!=0){
+        star1.src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg";
+        htmlid++;
+        removehtml.id="remove"+htmlid
+      lihtml.id="html"+htmlid;
+      addhtml.id='add'+htmlid
+      addhtml.addEventListener("click",addtocart1)
+      removehtml.addEventListener("click",removeitem1)
+        wish.push(lihtml)
+        wishlistitems.appendChild(wish[wish.length-1])
+        const dataToSend = {
+           product_id:"s1",
+           imgSrc: img1.src,
+           productName:"SLIVER-ITEM"
+           };
+           fetch("/insertData", {
+        method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+       },
+        body: JSON.stringify(dataToSend),
+      })
+    .then((response) => response.json())
+    .then((responseData) => {
+      if (responseData.success) {
+        console.log("Data inserted:", responseData.data);
+        // Handle success
+      } else {
+        console.error("Error inserting data:", responseData.message);
+        // Handle error
+      }
+    })
+    .catch((error) => {
+      console.error("Error inserting data:", error);
+    });
+      }else{
+        star1.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+        let elementtoremove=document.getElementById("html"+htmlid);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        const product_idToDelete = "s1"; 
+        fetch(`/deleteData/${product_idToDelete}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+ 
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Error deleting data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    if (data.success) {
+      console.log("Data deleted successfully");
+      // Remove the deleted data entry from the UI or update the UI accordingly
+    } else {
+      console.error("Error deleting data:", data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error deleting data:", error.message);
+  });
+  } 
+}
+    
+    function wish2(){
+      count2++;  
+      let lihtml=document.createElement("li");
+      let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=img2.src
+        addhtml.innerText="Add"
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)
+    
+
+      if(count2%2!=0){
+        star2.src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg";
+        htmlid1++;
+        removehtml.id="remove"+htmlid1
+      lihtml.id="html"+htmlid1;
+      addhtml.id='add'+htmlid1
+      addhtml.addEventListener("click",addtocart2)
+      removehtml.addEventListener("click",removeitem2)
+        wish.push(lihtml)
+        wishlistitems.appendChild(wish[wish.length-1])
+        const dataToSend = {
+           product_id:"s2",
+           imgSrc: img2.src,
+           productName:"SLIVER-ITEM"
+           };
+           fetch("/insertData", {
+        method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+       },
+        body: JSON.stringify(dataToSend),
+      })
+    .then((response) => response.json())
+    .then((responseData) => {
+      if (responseData.success) {
+        console.log("Data inserted:", responseData.data);
+        // Handle success
+      } else {
+        console.error("Error inserting data:", responseData.message);
+        // Handle error
+      }
+    })
+    .catch((error) => {
+      console.error("Error inserting data:", error);
+    });
+      
+      }else{
+        // localStorage.setItem("count",counter)
+        star2.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+        let elementtoremove=document.getElementById("html"+htmlid1);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+    
+        }
+        const product_idToDelete = "s2";
+        fetch(`/deleteData/${product_idToDelete}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+ 
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Error deleting data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    if (data.success) {
+      console.log("Data deleted successfully");
+      // Remove the deleted data entry from the UI or update the UI accordingly
+    } else {
+      console.error("Error deleting data:", data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error deleting data:", error.message);
+  });
+}
+       
+    }
+    function wish3(){
+      count3++;  
+      let lihtml=document.createElement("li");
+      let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=img3.src
+        addhtml.innerText="Add"
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)
+      if(count3%2!=0){
+        star3.src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg";
+        htmlid2++;
+        addhtml.id='add'+htmlid2
+      addhtml.addEventListener("click",addtocart3)
+        removehtml.id="remove"+htmlid2
+      lihtml.id="html"+htmlid2;
+      removehtml.addEventListener("click",removeitem3)
+        wish.push(lihtml)
+        wishlistitems.appendChild(wish[wish.length-1])
+        const dataToSend = {
+           product_id:"s3",
+           imgSrc:imghtml.src,
+           productName:"SLIVER-ITEM"
+           };
+           fetch("/insertData", {
+        method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+       },
+        body: JSON.stringify(dataToSend),
+      })
+    .then((response) => response.json())
+    .then((responseData) => {
+      if (responseData.success) {
+        console.log("Data inserted:", responseData.data);
+        // Handle success
+      } else {
+        console.error("Error inserting data:", responseData.message);
+        // Handle error
+      }
+    })
+    .catch((error) => {
+      console.error("Error inserting data:", error);
+    });
+        
+      }else{
+        star3.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg"
+      let elementtoremove=document.getElementById("html"+htmlid2);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        const product_idToDelete = "s3";
+        fetch(`/deleteData/${product_idToDelete}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+ 
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Error deleting data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    if (data.success) {
+      console.log("Data deleted successfully");
+      // Remove the deleted data entry from the UI or update the UI accordingly
+    } else {
+      console.error("Error deleting data:", data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error deleting data:", error.message);
+  });
+}
+      }
+
+    function wish4(){
+      count4++;  
+      let lihtml=document.createElement("li");
+      let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=img4.src
+        addhtml.innerText="Add"
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)
+      if(count4%2!=0){
+        star4.src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg";
+        htmlid3++;
+        addhtml.id='add'+htmlid3
+      addhtml.addEventListener("click",addtocart4)
+        removehtml.id="remove"+htmlid3
+      lihtml.id="html"+htmlid3 ;
+      removehtml.addEventListener("click",removeitem4)
+        wish.push(lihtml)
+        wishlistitems.appendChild(wish[wish.length-1])
+        const dataToSend = {
+           product_id:"s4",
+           imgSrc: imghtml.src,
+           productName:"SLIVER-ITEM"
+           };
+           fetch("/insertData", {
+        method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+       },
+        body: JSON.stringify(dataToSend),
+      })
+    .then((response) => response.json())
+    .then((responseData) => {
+      if (responseData.success) {
+        console.log("Data inserted:", responseData.data);
+        // Handle success
+      } else {
+        console.error("Error inserting data:", responseData.message);
+        // Handle error
+      }
+    })
+    .catch((error) => {
+      console.error("Error inserting data:", error);
+    });
+      
+      }else{
+        star4.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg"
+        let elementtoremove=document.getElementById("html"+htmlid3);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        const product_idToDelete = "s4";
+        fetch(`/deleteData/${product_idToDelete}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+ 
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Error deleting data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    if (data.success) {
+      console.log("Data deleted successfully");
+      // Remove the deleted data entry from the UI or update the UI accordingly
+    } else {
+      console.error("Error deleting data:", data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error deleting data:", error.message);
+  });
+}
+      }
+    function wish5(){
+      count5++;  
+      let lihtml=document.createElement("li");
+      let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=img5.src
+        addhtml.innerText="Add"
+        
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)
+      if(count5%2!=0){
+        star5.src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg";
+        htmlid4++;
+        addhtml.id='add'+htmlid4
+      addhtml.addEventListener("click",addtocart5)
+        removehtml.id="remove"+htmlid4
+      lihtml.id="html"+htmlid4;
+      removehtml.addEventListener("click",removeitem5)
+        wish.push(lihtml)
+        wishlistitems.appendChild(wish[wish.length-1])
+        const dataToSend = {
+           product_id:"s5",
+           imgSrc:imghtml.src,
+           productName:"SLIVER-ITEM"
+           };
+           fetch("/insertData", {
+        method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+       },
+        body: JSON.stringify(dataToSend),
+      })
+    .then((response) => response.json())
+    .then((responseData) => {
+      if (responseData.success) {
+        console.log("Data inserted:", responseData.data);
+        // Handle success
+      } else {
+        console.error("Error inserting data:", responseData.message);
+        // Handle error
+      }
+    })
+    .catch((error) => {
+      console.error("Error inserting data:", error);
+    });
+      }else{
+        star5.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg"
+        let elementtoremove=document.getElementById("html"+htmlid4);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        const product_idToDelete = "s5";
+        fetch(`/deleteData/${product_idToDelete}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+ 
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Error deleting data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    if (data.success) {
+      console.log("Data deleted successfully");
+      // Remove the deleted data entry from the UI or update the UI accordingly
+    } else {
+      console.error("Error deleting data:", data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error deleting data:", error.message);
+  });
+}
+      }
+    function wish6(){
+      count6++;  
+      let lihtml=document.createElement("li");
+      let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=img6.src
+        addhtml.innerText="Add"
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)
+      if(count6%2!=0){
+        star6.src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg";
+        htmlid5++;
+        addhtml.id='add'+htmlid5
+      addhtml.addEventListener("click",addtocart6)
+        removehtml.id="remove"+htmlid5
+      lihtml.id="html"+htmlid5;
+      removehtml.addEventListener("click",removeitem6)
+        wish.push(lihtml)
+        wishlistitems.appendChild(wish[wish.length-1])
+        const dataToSend = {
+           product_id:"s6",
+           imgSrc:imghtml.src,
+           productName:"SLIVER-ITEM"
+           };
+           fetch("/insertData", {
+        method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+       },
+        body: JSON.stringify(dataToSend),
+      })
+    .then((response) => response.json())
+    .then((responseData) => {
+      if (responseData.success) {
+        console.log("Data inserted:", responseData.data);
+        // Handle success
+      } else {
+        console.error("Error inserting data:", responseData.message);
+        // Handle error
+      }
+    })
+    .catch((error) => {
+      console.error("Error inserting data:", error);
+    });
+      }else{
+        star6.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg"
+        let elementtoremove=document.getElementById("html"+htmlid5);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        } 
+        const product_idToDelete = "s6";
+        fetch(`/deleteData/${product_idToDelete}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+ 
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Error deleting data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    if (data.success) {
+      console.log("Data deleted successfully");
+      // Remove the deleted data entry from the UI or update the UI accordingly
+    } else {
+      console.error("Error deleting data:", data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error deleting data:", error.message);
+  });
+}
+      }
+
+    function wish7(){
+      count7++;  
+      let lihtml=document.createElement("li");
+      let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=img7.src
+        addhtml.innerText="Add"
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)
+      if(count7%2!=0){
+        star7.src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg";
+        htmlid6++;
+        addhtml.id='add'+htmlid6
+      addhtml.addEventListener("click",addtocart7)
+        removehtml.id="remove"+htmlid6
+      lihtml.id="html"+htmlid6;
+      removehtml.addEventListener("click",removeitem7)
+        wish.push(lihtml)
+        wishlistitems.appendChild(wish[wish.length-1])
+        const dataToSend = {
+           product_id:"s7",
+           imgSrc:imghtml.src,
+           productName:"SLIVER-ITEM"
+           };
+           fetch("/insertData", {
+        method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+       },
+        body: JSON.stringify(dataToSend),
+      })
+    .then((response) => response.json())
+    .then((responseData) => {
+      if (responseData.success) {
+        console.log("Data inserted:", responseData.data);
+        // Handle success
+      } else {
+        console.error("Error inserting data:", responseData.message);
+        // Handle error
+      }
+    })
+    .catch((error) => {
+      console.error("Error inserting data:", error);
+    });
+      }else{
+        star7.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg"
+        let elementtoremove=document.getElementById("html"+htmlid6);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        const product_idToDelete = "s7";
+        fetch(`/deleteData/${product_idToDelete}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+ 
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Error deleting data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    if (data.success) {
+      console.log("Data deleted successfully");
+      // Remove the deleted data entry from the UI or update the UI accordingly
+    } else {
+      console.error("Error deleting data:", data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error deleting data:", error.message);
+  });
+
+}
+      }
+    function wish8(){
+      count8++;
+      let lihtml=document.createElement("li");
+      let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=img8.src
+        addhtml.innerText="Add"
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)  
+      if(count8%2!=0){
+        star8.src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg";
+        htmlid7++;
+        removehtml.id="remove"+htmlid7
+        addhtml.id='add'+htmlid7
+      addhtml.addEventListener("click",addtocart8)
+      lihtml.id="html"+htmlid7;
+      removehtml.addEventListener("click",removeitem8)
+        wish.push(lihtml)
+        wishlistitems.appendChild(wish[wish.length-1])
+        const dataToSend = {
+           product_id:"s8",
+           imgSrc:imghtml.src,
+           productName:"SLIVER-ITEM"
+           };
+           fetch("/insertData", {
+        method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+       },
+     
+        body: JSON.stringify(dataToSend),
+      })
+    .then((response) => response.json())
+    .then((responseData) => {
+      if (responseData.success) {
+        console.log("Data inserted:", responseData.data);
+        // Handle success
+      } else {
+        console.error("Error inserting data:", responseData.message);
+        // Handle error
+      }
+    })
+    .catch((error) => {
+      console.error("Error inserting data:", error);
+    });
+      }else{
+        star8.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg"
+        let elementtoremove=document.getElementById("html"+htmlid7);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        const product_idToDelete = "s8";
+        fetch(`/deleteData/${product_idToDelete}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+ 
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Error deleting data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    if (data.success) {
+      console.log("Data deleted successfully");
+      // Remove the deleted data entry from the UI or update the UI accordingly
+    } else {
+      console.error("Error deleting data:", data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error deleting data:", error.message);
+  });
+  
+}
+      }
+    function wish9(){
+      count9++;  
+      let lihtml=document.createElement("li");
+      let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=img9.src
+        addhtml.innerText="Add"
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)
+      if(count9%2!=0){
+        star9.src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg";
+        htmlid8++;
+        removehtml.id="remove"+htmlid8
+        addhtml.id='add'+htmlid8
+      addhtml.addEventListener("click",addtocart9)
+      lihtml.id="html"+htmlid8;
+      removehtml.addEventListener("click",removeitem9)
+        wish.push(lihtml)
+        wishlistitems.appendChild(wish[wish.length-1])
+        const dataToSend = {
+           product_id:"s9",
+           imgSrc:imghtml.src,
+           productName:"SLIVER-ITEM"
+           };
+           fetch("/insertData", {
+        method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+       },
+        body: JSON.stringify(dataToSend),
+      })
+    .then((response) => response.json())
+    .then((responseData) => {
+      if (responseData.success) {
+        console.log("Data inserted:", responseData.data);
+        // Handle success
+      } else {
+        console.error("Error inserting data:", responseData.message);
+        // Handle error
+      }
+    })
+    .catch((error) => {
+      console.error("Error inserting data:", error);
+    });
+      }else{
+        star9.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg"
+        let elementtoremove=document.getElementById("html"+htmlid8);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        const product_idToDelete = "s9";
+        fetch(`/deleteData/${product_idToDelete}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+ 
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Error deleting data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    if (data.success) {
+      console.log("Data deleted successfully");
+      // Remove the deleted data entry from the UI or update the UI accordingly
+    } else {
+      console.error("Error deleting data:", data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error deleting data:", error.message);
+  });
+}
+      }
+
+    function wcopen(){
+      count++;
+      if(count%2!==0){
+      wcsheet.style.display="inline";
+    } else{
+      wcsheet.style.display="none";
+    }
+    }
+    function addtocart1(){
+      let elementtoadd=document.getElementById("html"+htmlid);
+      addcart1();
+    }
+    function removeitem1(){
+      let elementtoremove=document.getElementById("html"+htmlid);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        star1.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+    }
+    function addtocart2(){
+      let elementtoadd=document.getElementById("html"+htmlid1);
+      addcart2();
+    }
+    function removeitem2(){
+      let elementtoremove=document.getElementById("html"+htmlid1);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        star2.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+    }
+    function addtocart3(){
+      let elementtoadd=document.getElementById("html"+htmlid2);
+      addcart3();
+    }
+    function removeitem3(){
+      let elementtoremove=document.getElementById("html"+htmlid2);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        star3.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+    }
+    function addtocart4(){
+      let elementtoadd=document.getElementById("html"+htmlid3);
+      addcart4();
+    }
+    function removeitem4(){
+      let elementtoremove=document.getElementById("html"+htmlid3);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        star4.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+    }
+    function addtocart5(){
+      let elementtoadd=document.getElementById("html"+htmlid4);
+      addcart5();
+    }
+    function removeitem5(){
+      let elementtoremove=document.getElementById("html"+htmlid4);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        star5.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+    }
+    function addtocart6(){
+      let elementtoadd=document.getElementById("html"+htmlid5);
+      addcart5();
+    }
+    function removeitem6(){
+      let elementtoremove=document.getElementById("html"+htmlid5);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        star6.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+    }
+    function addtocart7(){
+      let elementtoadd=document.getElementById("html"+htmlid6);
+      addcart7();
+    }
+    function removeitem7(){
+      let elementtoremove=document.getElementById("html"+htmlid6);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        star7.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+    }
+    function addtocart8(){
+      let elementtoadd=document.getElementById("html"+htmlid7);
+      addcart8();
+    }
+    function removeitem8(){
+      let elementtoremove=document.getElementById("html"+htmlid7);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        star8.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+    }
+    function addtocart9(){
+      let elementtoadd=document.getElementById("html"+htmlid8);
+      addcart9();
+    }
+    function removeitem9(){
+      let elementtoremove=document.getElementById("html"+htmlid8);
+        if ( elementtoremove) {
+          elementtoremove.remove();
+        }
+        star9.src="https://imgs.search.brave.com/mi-zvLzHi8N0-s_eGNrU-g5QE4sq30M0inIQ5dMJvac/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE4L0ZpdmUtcG9p/bnRlZF9zdGFyLnN2/Zw.svg";
+    }
+    function addcart1(){
+
+let lihtml=document.createElement("li");
+let imghtml=document.createElement("img")
+let spanhtml=document.createElement("span");
+let divhtml=document.createElement("div");
+let addhtml=document.createElement("button");
+let removehtml=document.createElement("button");
+imghtml.src=img1.src
+addhtml.innerText="Buy"
+spanhtml.innerText=rectify.innerText
+removehtml.innerText="Remove"
+divhtml.appendChild(addhtml);
+divhtml.appendChild(removehtml);
+lihtml.appendChild(imghtml) 
+lihtml.appendChild(spanhtml)
+lihtml.appendChild(divhtml)
+addhtml.addEventListener("click",buyclick1)
+removehtml.id="remove"+htmlid
+lihtml.id="html"+htmlid;
+removehtml.addEventListener("click",removeitem1)
+wish.push(lihtml)
+cart.appendChild(wish[wish.length-1]);
+const dataToSend = {
+   product_id:"s1",
+   imgSrc: img1.src,
+   productName:"SLIVER_ITEM"
+   };
+   fetch("/cartitems", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(dataToSend),
+})
+.then((response) => response.json())
+.then((responseData) => {
+if (responseData.success) {
+// Handle success
+} else {
+console.error("Error inserting data:", responseData.message);
+// Handle error
+}
+})
+.catch((error) => {
+console.error("Error inserting data:", error);
+});
+
+}
+function addcart2(){
+let lihtml=document.createElement("li");
+let imghtml=document.createElement("img")
+let spanhtml=document.createElement("span");
+let divhtml=document.createElement("div");
+let addhtml=document.createElement("button");
+let removehtml=document.createElement("button");
+imghtml.src=img2.src
+addhtml.innerText="Buy"
+spanhtml.innerText=rectify.innerText
+removehtml.innerText="Remove"
+divhtml.appendChild(addhtml);
+divhtml.appendChild(removehtml);
+lihtml.appendChild(imghtml) 
+lihtml.appendChild(spanhtml)
+lihtml.appendChild(divhtml)
+addhtml.addEventListener("click",buyclick2)
+removehtml.id="remove"+htmlid
+lihtml.id="html"+htmlid;
+removehtml.addEventListener("click",removeitem1)
+wish.push(lihtml)
+cart.appendChild(wish[wish.length-1])
+const dataToSend = {
+   product_id:"s2",
+   imgSrc: img2.src,
+   productName:"SLIVER_ITEM"
+   };
+   fetch("/cartitems", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(dataToSend),
+})
+.then((response) => response.json())
+.then((responseData) => {
+if (responseData.success) {
+// Handle success
+} else {
+console.error("Error inserting data:", responseData.message);
+// Handle error
+}
+})
+.catch((error) => {
+console.error("Error inserting data:", error);
+});
+
+}
+function addcart3(){
+let lihtml=document.createElement("li");
+let imghtml=document.createElement("img")
+let spanhtml=document.createElement("span");
+let divhtml=document.createElement("div");
+let addhtml=document.createElement("button");
+let removehtml=document.createElement("button");
+imghtml.src=img3.src
+addhtml.innerText="Buy"
+spanhtml.innerText=rectify.innerText
+removehtml.innerText="Remove"
+divhtml.appendChild(addhtml);
+divhtml.appendChild(removehtml);
+lihtml.appendChild(imghtml) 
+lihtml.appendChild(spanhtml)
+lihtml.appendChild(divhtml)
+addhtml.addEventListener("click",buyclick3)
+removehtml.id="remove"+htmlid
+lihtml.id="html"+htmlid;
+removehtml.addEventListener("click",removeitem1)
+wish.push(lihtml)
+cart.appendChild(wish[wish.length-1])
+const dataToSend = {
+   product_id:"s3",
+   imgSrc: img3.src,
+   productName:"SLIVER_ITEM"
+   };
+   fetch("/cartitems", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(dataToSend),
+})
+.then((response) => response.json())
+.then((responseData) => {
+if (responseData.success) {
+// Handle success
+} else {
+console.error("Error inserting data:", responseData.message);
+// Handle error
+}
+})
+.catch((error) => {
+console.error("Error inserting data:", error);
+});
+
+}
+function addcart4(){
+let lihtml=document.createElement("li");
+let imghtml=document.createElement("img")
+let spanhtml=document.createElement("span");
+let divhtml=document.createElement("div");
+let addhtml=document.createElement("button");
+let removehtml=document.createElement("button");
+imghtml.src=img4.src
+addhtml.innerText="Buy"
+spanhtml.innerText=rectify.innerText
+removehtml.innerText="Remove"
+divhtml.appendChild(addhtml);
+divhtml.appendChild(removehtml);
+lihtml.appendChild(imghtml) 
+lihtml.appendChild(spanhtml)
+lihtml.appendChild(divhtml)
+removehtml.id="remove"+htmlid
+lihtml.id="html"+htmlid;
+addhtml.addEventListener("click",buyclick4)
+removehtml.addEventListener("click",removeitem1)
+wish.push(lihtml)
+cart.appendChild(wish[wish.length-1])
+const dataToSend = {
+   product_id:"s4",
+   imgSrc: img4.src,
+   productName:"SLIVER_ITEM"
+   };
+   fetch("/cartitems", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(dataToSend),
+})
+.then((response) => response.json())
+.then((responseData) => {
+if (responseData.success) {
+// Handle success
+} else {
+console.error("Error inserting data:", responseData.message);
+// Handle error
+}
+})
+.catch((error) => {
+console.error("Error inserting data:", error);
+});
+
+}
+function addcart5(){
+let lihtml=document.createElement("li");
+let imghtml=document.createElement("img")
+let spanhtml=document.createElement("span");
+let divhtml=document.createElement("div");
+let addhtml=document.createElement("button");
+let removehtml=document.createElement("button");
+imghtml.src=img5.src
+addhtml.innerText="Buy"
+spanhtml.innerText=rectify.innerText
+removehtml.innerText="Remove"
+divhtml.appendChild(addhtml);
+divhtml.appendChild(removehtml);
+lihtml.appendChild(imghtml) 
+lihtml.appendChild(spanhtml)
+lihtml.appendChild(divhtml)
+removehtml.id="remove"+htmlid
+lihtml.id="html"+htmlid;
+addhtml.addEventListener("click",buyclick5)
+removehtml.addEventListener("click",removeitem1)
+wish.push(lihtml)
+cart.appendChild(wish[wish.length-1])
+const dataToSend = {
+   product_id:"s5",
+   imgSrc: img5.src,
+   productName:"SLIVER_ITEM"
+   };
+   fetch("/cartitems", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(dataToSend),
+})
+.then((response) => response.json())
+.then((responseData) => {
+if (responseData.success) {
+// Handle success
+} else {
+console.error("Error inserting data:", responseData.message);
+// Handle error
+}
+})
+.catch((error) => {
+console.error("Error inserting data:", error);
+});
+
+}
+function addcart6(){
+let lihtml=document.createElement("li");
+let imghtml=document.createElement("img")
+let spanhtml=document.createElement("span");
+let divhtml=document.createElement("div");
+let addhtml=document.createElement("button");
+let removehtml=document.createElement("button");
+imghtml.src=img6.src
+addhtml.innerText="Buy"
+spanhtml.innerText=rectify.innerText
+removehtml.innerText="Remove"
+divhtml.appendChild(addhtml);
+divhtml.appendChild(removehtml);
+lihtml.appendChild(imghtml) 
+lihtml.appendChild(spanhtml)
+lihtml.appendChild(divhtml)
+removehtml.id="remove"+htmlid
+lihtml.id="html"+htmlid;
+addhtml.addEventListener("click",buyclick6)
+removehtml.addEventListener("click",removeitem1)
+wish.push(lihtml)
+cart.appendChild(wish[wish.length-1])
+const dataToSend = {
+   product_id:"s6",
+   imgSrc: img6.src,
+   productName:"SLIVER_ITEM"
+     };
+   fetch("/cartitems", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(dataToSend),
+})
+.then((response) => response.json())
+.then((responseData) => {
+if (responseData.success) {
+// Handle success
+} else {
+console.error("Error inserting data:", responseData.message);
+// Handle error
+}
+})
+.catch((error) => {
+console.error("Error inserting data:", error);
+});
+
+}
+function addcart7(){
+let lihtml=document.createElement("li");
+let imghtml=document.createElement("img")
+let spanhtml=document.createElement("span");
+let divhtml=document.createElement("div");
+let addhtml=document.createElement("button");
+let removehtml=document.createElement("button");
+imghtml.src=img7.src
+addhtml.innerText="Buy"
+spanhtml.innerText=rectify.innerText
+removehtml.innerText="Remove"
+divhtml.appendChild(addhtml);
+divhtml.appendChild(removehtml);
+lihtml.appendChild(imghtml) 
+lihtml.appendChild(spanhtml)
+lihtml.appendChild(divhtml)
+removehtml.id="remove"+htmlid
+lihtml.id="html"+htmlid;
+addhtml.addEventListener("click",buyclick7)
+removehtml.addEventListener("click",removeitem1)
+wish.push(lihtml)
+cart.appendChild(wish[wish.length-1])
+const dataToSend = {
+   product_id:"s7",
+   imgSrc: img7.src,
+   productName:"SLIVER_ITEM"
+   };
+   fetch("/cartitems", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(dataToSend),
+})
+.then((response) => response.json())
+.then((responseData) => {
+if (responseData.success) {
+// Handle success
+} else {
+console.error("Error inserting data:", responseData.message);
+// Handle error
+}
+})
+.catch((error) => {
+console.error("Error inserting data:", error);
+});
+
+}
+function addcart8(){  
+let lihtml=document.createElement("li");
+let imghtml=document.createElement("img")
+let spanhtml=document.createElement("span");
+let divhtml=document.createElement("div");
+let addhtml=document.createElement("button");
+let removehtml=document.createElement("button");
+imghtml.src=img8.src
+addhtml.innerText="Buy"
+spanhtml.innerText=rectify.innerText
+removehtml.innerText="Remove"
+divhtml.appendChild(addhtml);
+divhtml.appendChild(removehtml);
+lihtml.appendChild(imghtml) 
+lihtml.appendChild(spanhtml)
+lihtml.appendChild(divhtml)
+removehtml.id="remove"+htmlid
+lihtml.id="html"+htmlid;
+addhtml.addEventListener("click",buyclick7)
+removehtml.addEventListener("click",removeitem1)
+wish.push(lihtml)
+cart.appendChild(wish[wish.length-1])
+const dataToSend = {
+   product_id:"s8",
+   imgSrc: img8.src,
+   productName:"SLIVER_ITEM"
+   };
+   fetch("/cartitems", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(dataToSend),
+})
+.then((response) => response.json())
+.then((responseData) => {
+if (responseData.success) {
+// Handle success
+} else {
+console.error("Error inserting data:", responseData.message);
+// Handle error
+}
+})
+.catch((error) => {
+console.error("Error inserting data:", error);
+});
+
+}
+function addcart9(){
+let lihtml=document.createElement("li");
+let imghtml=document.createElement("img")
+let spanhtml=document.createElement("span");
+let divhtml=document.createElement("div");
+let addhtml=document.createElement("button");
+let removehtml=document.createElement("button");
+imghtml.src=img9.src
+addhtml.innerText="Buy"
+spanhtml.innerText=rectify.innerText
+removehtml.innerText="Remove"
+divhtml.appendChild(addhtml);
+divhtml.appendChild(removehtml);
+lihtml.appendChild(imghtml) 
+lihtml.appendChild(spanhtml)
+lihtml.appendChild(divhtml)
+removehtml.id="remove"+htmlid
+lihtml.id="html"+htmlid;
+addhtml.addEventListener("click",buyclick9)
+removehtml.addEventListener("click",removeitem1)
+wish.push(lihtml)
+cart.appendChild(wish[wish.length-1])
+const dataToSend = {
+   product_id:"s9",
+   imgSrc: img9.src,
+   productName:"SLIVER_ITEM"
+   };
+   fetch("/cartitems", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(dataToSend),
+})
+.then((response) => response.json())
+.then((responseData) => {
+if (responseData.success) {
+// Handle success
+} else {
+console.error("Error inserting data:", responseData.message);
+// Handle error
+}
+})
+.catch((error) => {
+console.error("Error inserting data:", error);
+});
+
+}
+    function baropen1(){
+      bar1.style.display="inline";
+      bar2.style.display="none";
+      bar3.style.display="none";
+      bar4.style.display="none";
+      bar5.style.display="none";
+      bar6.style.display="none";
+      bar7.style.display="none";
+      bar8.style.display="none";
+      bar9.style.display="none";
+      wcsheet.style.display="none"
+      imgdet1.src=img1.src;
+
+    }
+    function baropen2(){
+      bar1.style.display="none";
+      bar2.style.display="inline";
+      bar3.style.display="none";
+      bar4.style.display="none";
+      bar5.style.display="none";
+      bar6.style.display="none";
+      bar7.style.display="none";
+      bar8.style.display="none";
+      bar9.style.display="none";
+      imgdet2.src=img2.src;
+      wcsheet.style.display="none"
+    }
+    function baropen3(){
+      bar1.style.display="none";
+      bar2.style.display="none";
+      bar3.style.display="inline";
+      bar4.style.display="none";
+      bar5.style.display="none";
+      bar6.style.display="none";
+      bar7.style.display="none";
+      bar8.style.display="none";
+      bar9.style.display="none";
+      imgdet3.src=img3.src;
+      wcsheet.style.display="none"
+    }
+    function baropen4(){
+      bar1.style.display="none";
+      bar2.style.display="none";
+      bar3.style.display="none";
+      bar4.style.display="inline";
+      bar5.style.display="none";
+      bar6.style.display="none";
+      bar7.style.display="none";
+      bar8.style.display="none";
+      bar9.style.display="none";
+      imgdet4.src=img4.src;
+      wcsheet.style.display="none"
+    }
+    function baropen5(){
+      bar1.style.display="none";
+      bar2.style.display="none";
+      bar3.style.display="none";
+      bar4.style.display="none";
+      bar5.style.display="inline";
+      bar6.style.display="none";
+      bar7.style.display="none";
+      bar8.style.display="none";
+      bar9.style.display="none";
+      imgdet5.src=img5.src;
+      wcsheet.style.display="none"
+    }
+    function baropen6(){
+      bar1.style.display="none";
+      bar2.style.display="none";
+      bar3.style.display="none";
+      bar4.style.display="none";
+      bar5.style.display="none";
+      bar6.style.display="inline";
+      bar7.style.display="none";
+      bar8.style.display="none";
+      bar9.style.display="none";
+      imgdet6.src=img6.src;
+      wcsheet.style.display="none"
+    }
+    function baropen7(){
+      bar1.style.display="none";
+      bar2.style.display="none";
+      bar3.style.display="none";
+      bar4.style.display="none";
+      bar5.style.display="none";
+      bar6.style.display="none";
+      bar7.style.display="inline";
+      bar8.style.display="none";
+      bar9.style.display="none";
+      imgdet7.src=img7.src;
+      wcsheet.style.display="none"
+    }
+    function baropen8(){
+      bar1.style.display="none";
+      bar2.style.display="none";
+      bar3.style.display="none";
+      bar4.style.display="none";
+      bar5.style.display="none";
+      bar6.style.display="none";
+      bar7.style.display="none";
+      bar8.style.display="inline";
+      bar9.style.display="none";
+      imgdet8.src=img8.src;
+      wcsheet.style.display="none"
+    }
+    function baropen9(){
+      bar1.style.display="none";
+      bar2.style.display="none";
+      bar3.style.display="none";
+      bar4.style.display="none";
+      bar5.style.display="none";
+      bar6.style.display="none";
+      bar7.style.display="none";
+      bar8.style.display="none";
+      bar9.style.display="inline";
+      imgdet9.src=img9.src;
+      wcsheet.style.display="none"
+    }
+    function wrong(){
+      bar1.style.display="none";
+      bar2.style.display="none";
+      bar3.style.display="none";
+      bar4.style.display="none";
+      bar5.style.display="none";
+      bar6.style.display="none";
+      bar7.style.display="none";
+      bar8.style.display="none";
+      bar9.style.display="none";
+    }  
+    function home(){
+      window.location.href="/home"
+    }
+</script>
+  </body>
+</html>

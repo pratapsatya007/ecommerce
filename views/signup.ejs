@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section style="display: flex">
+      <div id="sec-1">
+        <div id="logo"></div>
+        <h1 id="des">Welcome to Neelima Jewellery</h1>
+        <div>
+          <a href="/" id="signup">Login</a>
+        </div>
+      </div>
+      <div id="sec-2">
+        <h1 id="log">SIGNUP</h1>
+        <form action="/auth/signup" method="post" id="form">
+          <div>
+            <input
+              type="text"
+              id="password1"
+              size="25"
+              name="username"
+              placeholder="Enter your username"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              id="email"
+              size="25"
+              name="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              size="25"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button type="submit" id="submit">Sign up</button>
+        </form>
+      </div>
+    </section>
+    <script>
+      // Get the button element
+      const nameForm = document.getElementById("form");
+
+      nameForm.addEventListener("submit", function (event) {
+        const nameInput = document.getElementById("password1");
+        const name = nameInput.value;
+
+        // Append the username as a URL parameter and navigate to a new page
+        window.location.href = "/home?" + encodeURIComponent(name);
+
+        // nameInput.value = "";
+      });
+    </script>
+  </body>
+</html>

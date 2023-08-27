@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/buynow.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <div id="name">NEELIMA JEWELLERY</div>
+      <nav id="nav-bar">
+        <div id="home" onclick="home1()">Home</div>
+        <div id="addcart" onclick="cartopen()">Add to cart</div>
+        <div id="wishlist" onclick="wishopen()">Wishlist</div>
+      </nav>
+    </header>
+    <main id="main">
+      <div id="dev-add">
+        <img
+          src="https://imgs.search.brave.com/E28t4AoAE4xcSCZriyaI8qJ5g89o0gMgKUW3GnL7DGE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy9r/Y0tvajhka2kucG5n"
+          alt=""
+          id="tick1"
+        />
+        <div class="sno">1</div>
+        <div class="sty1">DELIVERY-ADDRESS</div>
+      </div>
+      <form action="" id="fdevadd">
+        <input
+          type="text"
+          placeholder="Name"
+          name="userdetails"
+          size="20"
+          class="form-sty"
+          id="buyer"
+          required
+        />
+        <input
+          type="text"
+          placeholder="10-digit mobile number"
+          class="form-sty"
+          name="userdetails"
+          id="mb"
+          required
+        />
+        <input
+          type="text"
+          placeholder="pincode"
+          class="form-sty"
+          name="userdetails"
+          id="pincode"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Complete address"
+          class="form-sty"
+          name="userdetails"
+          id="cadd"
+          required
+        />
+        <input
+          type="radio"
+          id="dev1"
+          name="userdetails"
+          class="radio"
+          required
+        />Home(All day delivery) <br />
+        <input
+          type="radio"
+          name="userdetails"
+          id="dev2"
+          class="radio"
+          required
+        />Work (delivery between 10AM-9PM) <br />
+        <button type="submit" id="save" onclick="save1()">Save</button>
+        <button type="reset" id="cancel">Cancel</button>
+      </form>
+      <div id="od-sum">
+        <img
+          src="https://imgs.search.brave.com/E28t4AoAE4xcSCZriyaI8qJ5g89o0gMgKUW3GnL7DGE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy9r/Y0tvajhka2kucG5n"
+          alt=""
+          id="tick2"
+        />
+        <div class="sno">2</div>
+        <div class="sty1">ORDER-SUMMARY</div>
+      </div>
+      <div id="od-sumsec">
+        <img src="" alt="" id="img" />
+        <div id="counter">
+          <div id="minus" class="sym" onclick="quantitydecrement()">-</div>
+          <div id="count">1</div>
+          <div id="plus" class="sym" onclick="quantityincrement()">+</div>
+        </div>
+        <div
+          style="
+            position: relative;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 330px;
+            height: 350px;
+            border-radius: 10px;
+            padding-top: 15px;
+            padding-left: 50px;
+          "
+        >
+          <h1
+            style="
+              font-weight: bold;
+              font-size: 24px;
+              font-family: Arial, Helvetica, sans-serif;
+              text-decoration: underline;
+              position: absolute;
+              left: 110px;
+              top: 20px;
+
+            "
+          >
+            Price Details
+          </h1>
+          <div class="bill" style="position: absolute;top:40px;left: 85px;">Item-Name:<span id="pname"></span></div>
+          <div class="bill" style="position: absolute; top: 75px">
+            Weight of item: <span id="gms">3</span> Grams
+          </div>
+          <div class="bill" style="position: absolute; top: 110px; left: 100px">
+            Item-type: GOLD
+          </div>
+          <div class="bill" style="position: absolute; top: 145px; left: 93px">
+            Gold-Rate: ₹5427.3
+          </div>
+          <div class="bill" style="position: absolute; top: 180px; left: 37px">
+            Making-charges: ₹500
+          </div>
+          <div
+            class="bill"
+            style="
+              padding-top: 10px;
+              text-align: center;
+              border-top: 2px solid black;
+              width: 180px;
+              height: 30px;
+              position: absolute;
+              top: 215px;
+              left: 80px;
+              font-size: 22px;
+            "
+          >
+            Total = ₹<span id="fprice">16781.9</span>
+          </div>
+        </div>
+        <button id="odbtn" onclick="ordernow()">ORDER NOW</button>
+        <button id="cancel1" onclick="home1()">Cancel order</button>
+      </div>
+      <div id="payment">
+        <img
+          src="https://imgs.search.brave.com/E28t4AoAE4xcSCZriyaI8qJ5g89o0gMgKUW3GnL7DGE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy9r/Y0tvajhka2kucG5n"
+          alt=""
+          id="tick3"
+        />
+        <div class="sno">3</div>
+        <div class="sty1">PAYMENT</div>
+      </div>
+      <div
+        style="
+          width: 200px;
+          height: 150px;
+          background-color: rgb(232, 229, 229);
+          border: 2px solid black;
+          box-shadow: 2px 2px 2px black;
+          position: relative;
+          position: absolute;
+          top: 470px;
+          left: 200px;
+          padding: 10px;
+          display: none;
+        "
+        id="paymentsec"
+      >
+        <input
+          type="radio"
+          name="pay"
+          id="p3"
+          style="margin-top: 10px"
+          required
+        />Cash on delivery <br />
+        <input
+          type="radio"
+          name="pay"
+          id="p1"
+          style="margin-top: 10px"
+          required
+        />UPI
+        <br />
+        <input
+          type="radio"
+          name="pay"
+          id="p2"
+          style="margin-top: 10px"
+          required
+        />CARD
+        <br />
+        <button id="porder" onclick="orderconfirm()">Place an order</button>
+      </div>
+    </main>
+    <div id="wcsheet">
+     <div class="img-sty"  id="cartdiv"><img src="https://imgs.search.brave.com/vFYpXTN_KRcHAfx5yrZJaudSQaZNtn8XUYIEdMWu5ao/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L3Nob3BwaW5nLWNh/cnQtcG5nL3Nob3Bw/aW5nLWNhcnQtc3Zn/LXBuZy1pY29uLWRv/d25sb2FkLTI4LnBu/Zw" id="cartlogo" onclick="cartclick()"></img></div>
+     <div class="wrong" onclick="wrong()"></div>
+     <div class="img-sty" id="wishlistdiv">  <img src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg" id="wishlogo" onclick="wishclick()"></img></div>
+      <ul id="cart" type="none" >
+        <!--  <li>
+          <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="">
+          <span>GOLD RING</span>
+          <div >
+            <button>Add</button>
+          <button>Remove</button>
+          </div> -->
+      </ul>  
+      <!-- <img src="https://imgs.search.brave.com/vFYpXTN_KRcHAfx5yrZJaudSQaZNtn8XUYIEdMWu5ao/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L3Nob3BwaW5nLWNh/cnQtcG5nL3Nob3Bw/aW5nLWNhcnQtc3Zn/LXBuZy1pY29uLWRv/d25sb2FkLTI4LnBu/Zw" id="msgempty"></img>
+      <span id="msg">EMPTY</span> -->
+     <ul   id="wishlist-items" type="none">
+      <!-- <li>
+        <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="">
+        <span>GOLD RING</span>
+        <div >
+          <button>Add</button>
+        <button>Remove</button>
+        </div> -->
+      </li>
+     </ul>
+     </div>
+     <img src="/thankyoupage" id="thankyou"></img>
+    <script>
+      let main=document.getElementById("main")
+      let fdevadd = document.getElementById("fdevadd");
+      let gms=document.getElementById("gms");
+      let pname=document.getElementById("pname");
+      let save = document.getElementById("save");
+      let buyer = document.getElementById("buyer");
+      let mb = document.getElementById("mb");
+      let pincode = document.getElementById("pincode");
+      let cadd = document.getElementById("cadd");
+      let dev1 = document.getElementById("dev1");
+      let dev2 = document.getElementById("dev2");
+      let tick1 = document.getElementById("tick1");
+      let tick2 = document.getElementById("tick2");
+      let odsum = document.getElementById("od-sum");
+      let odsumsec = document.getElementById("od-sumsec");
+      let count=document.getElementById("count")
+      let payment = document.getElementById("payment");
+      let paymentsec = document.getElementById("paymentsec");
+      let cartdiv=document.getElementById("cartdiv");
+      let wishlistdiv=document.getElementById("wishlistdiv")
+      let addcart=document.getElementById("addcart");
+      let wishlist=document.getElementById("wishlist")
+      let home=document.getElementById("home")
+      let cart=document.getElementById("cart")
+      let wishlistitems=document.getElementById("wishlist-items")
+      let wcsheet=document.getElementById("wcsheet")
+      let thankyou=document.getElementById("thankyou")
+      let htmlid=0
+      let wish=[]
+
+        function addtocart1(){
+     let name=document.getElementsByTagName("span")
+     if(name.innerText="Earrings"){
+      window.location.href="/gold/earrings"
+     }
+    }
+    function addcart1(){
+        let lihtml=document.createElement("li");
+        let imghtml=document.createElement("img")
+        let spanhtml=document.createElement("span");
+        let divhtml=document.createElement("div");
+        let addhtml=document.createElement("button");
+        let removehtml=document.createElement("button");
+        imghtml.src=imgSrc
+        addhtml.innerText="Buy"
+        spanhtml.innerText=rectify.innerText
+        removehtml.innerText="Remove"
+        divhtml.appendChild(addhtml);
+        divhtml.appendChild(removehtml);
+        lihtml.appendChild(imghtml) 
+        lihtml.appendChild(spanhtml)
+        lihtml.appendChild(divhtml)
+        addhtml.addEventListener("click",buyclick1)
+        removehtml.id="remove"+htmlid
+      lihtml.id="html"+htmlid;
+      removehtml.addEventListener("click",removeitem1)
+        wish.push(lihtml)
+        cart.appendChild(wish[wish.length-1])
+    }
+     
+
+      function save1() {
+        event.preventDefault(); //prevents the browser the
+        const buyer = document.getElementById("buyer").value;
+        const mb = document.getElementById("mb").value;
+        const pincode = document.getElementById("pincode").value;
+        const cadd = document.getElementById("cadd").value;
+        const dev1 = document.getElementById("dev1").value;
+        const dev2 = document.getElementById("dev2").value;
+        if (buyer && mb && pincode && cadd && dev1 && dev2) {
+          fdevadd.style.display = "none";
+          tick1.style.display = "inline";
+          odsum.style.display = "inline";
+          odsumsec.style.display = "inline";
+        }
+        let urlParams = new URLSearchParams(window.location.search);
+       const productName = urlParams.get("productName");
+       let price = urlParams.get("price");
+       const productImageSrc = urlParams.get("productImageSrc");
+       const weight=urlParams.get("weight")
+
+      if (productName && price && productImageSrc&&weight) {
+        img.src=productImageSrc;
+        price=parseInt(price);
+        fprice.innerText=price
+        gms.innerText=weight;
+        pname.innerText=productName
+      }
+      }
+      function quantityincrement(){
+        itemnum++;
+        let urlParams = new URLSearchParams(window.location.search);
+        let price = urlParams.get("price");
+        price=parseInt(price);
+        fprice.innerText=price*itemnum;
+        count.innerText=itemnum
+      }
+      function quantitydecrement(){
+        if(itemnum!=1){
+        itemnum--;
+        let urlParams = new URLSearchParams(window.location.search);
+        let price = urlParams.get("price");
+        price=parseInt(price);
+        fprice.innerText=price*itemnum;
+        count.innerText=itemnum
+      }
+      else{
+        alert("SORRY!CAN'T BE DONE")
+      }
+    }
+      function ordernow() {
+        // event.preventDefault();
+        payment.style.display = "inline";
+        paymentsec.style.display = "inline";
+        odsumsec.style.display = "none";
+        tick2.style.display = "inline";
+      }
+      function orderconfirm(){
+        const p1=document.getElementById("p1").value
+        const p2=document.getElementById("p2").value
+        const p3=document.getElementById("p3").value
+        if(p1&&p2&&p3){
+          main.style.display="none"
+        thankyou.style.display="inline"
+        addcart.style.display="none"
+        wishlist.style.display="none"
+        home.style.display="inline"
+        }
+
+      }
+      function cartopen(){
+        wcsheet.style.display="inline"
+        cartdiv.style.display="inline"
+        addcart.style.backgroundColor="#f3ef11"
+        cart.style.display="inline";
+        wishlistdiv.style.display="none"
+        wishlistitems.style.display="none"
+        wishlist.style.backgroundColor="white"
+        function fetchDataByUsername(username) {
+    fetch(`/getcart/${username}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data.success) {
+          const userData = data.data;
+          console.log("User Data:", userData);
+
+          for (let i = 0; i < userData.length; i++) {
+            let wishlist = userData[i];
+            if (wishlist !== null) {
+              let lihtml = document.createElement("li");
+              let imghtml = document.createElement("img");
+              let spanhtml = document.createElement("span");
+              let divhtml = document.createElement("div");
+              let addhtml = document.createElement("button");
+              imghtml.src = wishlist.imgSrc;
+              addhtml.innerText = "Add";
+              spanhtml.innerText = "Gold ring";
+              divhtml.appendChild(addhtml);
+              lihtml.appendChild(imghtml);
+              lihtml.appendChild(spanhtml);
+              lihtml.appendChild(divhtml);
+              htmlid++;
+              lihtml.id = "html" + htmlid;
+              addhtml.id = 'add' + htmlid;
+              addhtml.addEventListener("click", addtocart1);
+              wish.push(lihtml);
+              wishlistitems.appendChild(lihtml);
+            }
+          }
+        } else {
+          console.error("Error retrieving data:", data.message);
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching data:", error);
+      });
+  }
+  let user=localStorage.getItem("user");
+  
+  user=user.slice(0,-1)
+  // Call the function with the appropriate username
+  fetchDataByUsername(user);
+        
+      }
+
+
+      
+
+
+
+
+function wishopen() {
+  wishlistitems.innerText = "";
+  wcsheet.style.display = "inline";
+  cartdiv.style.display = "none";
+  addcart.style.backgroundColor = "white";
+  cart.style.display = "none";
+  wishlistdiv.style.display = "inline";
+  wishlist.style.backgroundColor = "#f3ef11";
+  wishlistitems.style.display = "inline";
+
+  // Call the function to fetch user data
+  function fetchDataByUsername(username) {
+    fetch(`/getData/${username}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data.success) {
+          const userData = data.data;
+          console.log("User Data:", userData);
+
+          for (let i = 0; i < userData.length; i++) {
+            let wishlist = userData[i];
+            if (wishlist !== null) {
+              let lihtml = document.createElement("li");
+              let imghtml = document.createElement("img");
+              let spanhtml = document.createElement("span");
+              let divhtml = document.createElement("div");
+              let addhtml = document.createElement("button");
+              imghtml.src = wishlist.imgSrc;
+              addhtml.innerText = "Add";
+              spanhtml.innerText = "Gold ring";
+              divhtml.appendChild(addhtml);
+              lihtml.appendChild(imghtml);
+              lihtml.appendChild(spanhtml);
+              lihtml.appendChild(divhtml);
+              htmlid++;
+              lihtml.id = "html" + htmlid;
+              addhtml.id = 'add' + htmlid;
+              addhtml.addEventListener("click", addtocart1);
+              wish.push(lihtml);
+              wishlistitems.appendChild(lihtml);
+            }
+          }
+        } else {
+          console.error("Error retrieving data:", data.message);
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching data:", error);
+      });
+  }
+
+  // Call the function with the appropriate username
+
+  fetchDataByUsername("pratap");
+}
+
+
+
+
+       
+   
+       
+
+        
+
+      function wrong(){
+        wcsheet.style.display="none"
+        wishlist.style.backgroundColor="white"
+        addcart.style.backgroundColor="white"
+
+      }
+      function home1(){
+      window.location.href="/home"
+    }
+    </script>
+  </body>
+</html>

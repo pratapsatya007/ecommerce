@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E Commerce</title>
+    <link rel="stylesheet" href="/home.css" />
+  </head>
+  <body>
+    <section style="background-color: #f3ef11; width: 100%; height: 45px">
+      <div id="scroll">Today: Gold=5925/g | Sliver=75/g | Platinum=3540/g</div>
+    </section>
+    <header>
+      <div id="logo"></div>
+      <div id="name">NEELIMA JEWELLERY</div>
+      <nav id="nav-bar">
+        <div id="home">Home</div>
+        <div id="account">Account</div>
+        <div id="aboutus">About us</div>
+        <div id="contactus">Contact us</div>
+      </nav>
+    </header>
+
+    <section id="products">
+      <div id="product">Product Type:</div>
+      <button id="gold" onclick="openg()">Gold Ornaments</button>
+      <button id="sliver" onclick="opens()">Sliver Ornaments</button>
+      <button id="platinum" onclick="openp()">Platinum Ornaments</button>
+    </section>
+    <main>
+      <section id="img">
+        <span
+          ><img
+            src="https://www.lalithaajewellery.com/assets/img/home-banner-1.webp"
+            alt="no image"
+            class="img"
+        /></span>
+        <span
+          ><img
+            src="https://www.lalithaajewellery.com/assets/img/home-banner-5.webp"
+            alt="no image"
+            class="img"
+        /></span>
+        <span
+          ><img
+            src="https://www.lalithaajewellery.com/assets/img/home-banner-4.webp"
+            alt="no image"
+            class="img"
+        /></span>
+        <span
+          ><img
+            src="https://www.lalithaajewellery.com/assets/img/home-banner-6.webp"
+            alt="no image"
+            class="img"
+        /></span>
+        <span
+          ><img
+            src="https://www.lalithaajewellery.com/assets/img/home-banner-3.webp"
+            alt="no image"
+            class="img"
+        /></span>
+      </section>
+  <div id="wcsheet">
+    <img src="https://imgs.search.brave.com/vFYpXTN_KRcHAfx5yrZJaudSQaZNtn8XUYIEdMWu5ao/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L3Nob3BwaW5nLWNh/cnQtcG5nL3Nob3Bw/aW5nLWNhcnQtc3Zn/LXBuZy1pY29uLWRv/d25sb2FkLTI4LnBu/Zw" id="cartlogo"></img>
+ 
+     <img src="https://imgs.search.brave.com/fUAmpTOJj5QuZo1MqNUuGwwoNRsFl0XIVJ8bNXhyC3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL1N0YXIqLnN2/Zw.svg" id="wishlogo"></img>
+     <img src="https://imgs.search.brave.com/ktgGkJSJ5nPIFfvbvDgC12LMPQasgOYSMd5D9v4fYJo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMjk2MS8yOTYx/OTQ4LnBuZw" id="history" alt="">
+     <div id="items">
+      <!-- <img src="https://imgs.search.brave.com/vFYpXTN_KRcHAfx5yrZJaudSQaZNtn8XUYIEdMWu5ao/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L3Nob3BwaW5nLWNh/cnQtcG5nL3Nob3Bw/aW5nLWNhcnQtc3Zn/LXBuZy1pY29uLWRv/d25sb2FkLTI4LnBu/Zw" id="msgempty"></img>
+        <span id="msg">EMPTY</span> -->
+      </div>  
+ <ul   id="wishlist-items" type="none">
+  <!-- <li>
+    <img src="https://www.lalithaajewellery.com/assets/img/ring/1.webp" alt="">
+    <span>GOLD RING</span>
+    <div >
+      <button>Add</button>
+    <button>Remove</button>
+    </div>
+  </li> -->
+ </ul>
+ </div>
+    </main>
+    <script>
+      let goldbtn = document.getElementById("gold");
+      let sliverbtn = document.getElementById("sliver");
+      let platinumbtn = document.getElementById("platinum");
+      let count=0;
+      let wcsheet = document.getElementById("wcsheet");
+      let urlParams = new URLSearchParams(window.location.search);
+        let user=new URLSearchParams(window.location.search);
+        localStorage.setItem("user",user)
+      function openg() {
+        window.location.href = "/gold/rings";
+      }
+      function opens() {
+        window.location.href = "/sliver";
+      }
+      function openp() {
+        window.location.href = "/platinum";
+      }
+      function wcopen() {
+        count++;
+        if (count % 2 !== 0) {
+          wcsheet.style.display = "inline";
+        } else {
+          wcsheet.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
